@@ -3,4 +3,59 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+:root {
+  --overlay: #00000070;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 350px;
+  color: whitesmoke;
+  background-image: url("images/space-bg.jpg");
+  background-size: cover;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100svw;
+  background-color: var(--overlay);
+}
+
+header #nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 350px;
+}
+
+#info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 900px;
+}
+
+#info p {
+  width: 50%;
+  background-color: var(--overlay);
+  padding: 20px;
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--overlay);
+  width: 900px;
 }
