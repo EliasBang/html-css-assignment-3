@@ -4,17 +4,19 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: sans-serif;
+  max-width: 99svw;
 }
 
 :root {
   --overlay: #00000070;
+  --primary-color: #de6725;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 350px;
+  gap: 200px;
   color: whitesmoke;
   background-image: url("images/space-bg.jpg");
   background-size: cover;
@@ -23,39 +25,74 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  position: sticky;
+  top: 0;
+  height: 80px;
   width: 100svw;
   background-color: var(--overlay);
+}
+
+header h1 {
+  color: var(--primary-color);
 }
 
 header #nav {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 33%;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 350px;
 }
 
 #info {
   display: flex;
   justify-content: space-evenly;
+  scroll-margin-top: 25svh;
   width: 900px;
+  gap: 20px;
 }
 
 #info p {
   width: 50%;
   background-color: var(--overlay);
   padding: 20px;
+  border-radius: 20px;
+  font-size: large;
+}
+
+#info img {
+  width: 50%;
 }
 
 #gallery {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 30px;
+  scroll-margin-top: 25svh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: var(--primary-color) var(--overlay);
   background-color: var(--overlay);
-  width: 900px;
+  width: 60%;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#gallery img {
+  max-height: 300px;
+}
+
+footer p {
+  padding: 20px;
 }
