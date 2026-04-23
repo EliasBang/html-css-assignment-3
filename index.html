@@ -1,53 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body id="body">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="body">
     <header>
-        <h1>The Official Mars Fanclub</h1>
-        <div class="blank"></div>
-        <div id="nav">
-            <a href="#body">To top</a>
-            <a href="#info">To info</a>
-            <a href="#gallery">To gallery</a>
-            <a href="#footer">To bottom</a>
-        </div>
+      <h1>The Official Mars Fanclub</h1>
+      <div class="blank"></div>
+      <div id="nav">
+        <a href="#body">To top</a>
+        <a href="#info">To info</a>
+        <a href="#video"> To video</a>
+        <a href="#gallery">To gallery</a>
+        <a href="#footer">To bottom</a>
+      </div>
     </header>
     <main>
-        <section id="info">
-            <p>
-                <strong>Mars</strong>, the fourth planet from the Sun, has long captured human imagination with its
-                striking
-                red hue and
-                mysterious surface.
-                Often called the Red Planet, its color comes from iron-rich dust that blankets its
-                terrain.<br>
-                <br>
-                Mars is a cold, desert world, featuring the largest volcano in the solar system, Olympus Mons,
-                and a vast canyon system, Valles Marineris. Though its atmosphere is thin and mostly carbon dioxide,
-                evidence suggests that liquid water once flowed there. Today, Mars remains a primary target for
-                exploration, as scientists search for signs of past life and prepare for future human missions.
-            </p>
-            <img src="images/mars-picture.png" alt="Picture of a planet">
-        </section>
+      <section id="info">
+        <p>
+          <strong>Mars</strong>, the fourth planet from the Sun, has long
+          captured human imagination with its striking red hue and mysterious
+          surface. Often called the Red Planet, its color comes from iron-rich
+          dust that blankets its terrain.<br />
+          <br />
+          Mars is a cold, desert world, featuring the largest volcano in the
+          solar system, Olympus Mons, and a vast canyon system, Valles
+          Marineris. Though its atmosphere is thin and mostly carbon dioxide,
+          evidence suggests that liquid water once flowed there. Today, Mars
+          remains a primary target for exploration, as scientists search for
+          signs of past life and prepare for future human missions.
+        </p>
+        <img src="images/mars-picture.png" alt="Picture of a planet" />
+      </section>
 
-        <section id="gallery">
-            <img src="images/MIT-MissMars-01-press.jpg" alt="Planet surface">
-            <img src="images/perseverance_rover_on_mars.webp" alt="Rover on Mars 1">
-            <img src="images/images.jpeg" alt="Rover on Mars 2">
-            <img src="images/mars-rover-sulfur-hero-940x529.jpg" alt="Rover on Mars 3">
-            <img src="images/daniele-colucci-OtXJhYjbKeg-unsplash.jpg" alt="Mars landscape">
-        </section>
+      <section id="history">
+        <p class="section-card">
+          <strong>4.5 billion years ago:</strong> Mars formed from rock and dust
+          in the early solar system.<br /><br />
+
+          <strong>Ancient Mars:</strong> Scientists believe it once had liquid
+          water, rivers, and possibly oceans, making it much warmer and wetter
+          than today.<br /><br />
+
+          <strong>Atmosphere loss:</strong> Over time, Mars lost most of its
+          atmosphere, causing temperatures to drop and water to disappear.<br /><br />
+
+          <strong>Today:</strong> Mars is a cold, dry desert planet — but still
+          one of the most studied worlds in space.
+        </p>
+        <img
+          src="images/DoN8vzTvl3UBYalp5JXtyfK0Al3B1T4Hvv_di-RLd8ffHTr0NNbuasY327I5gU2AzT7AcP1V1V1ZKS3AaNNM7NTRxpqkSY78MJb7XVXgmkcGcGwxqQ_2IL_nFRLduAfWK3pgXJhbbhyAu6w4ZhmqEYNMueu_c0RTNpCJE4KHyKKQm4po_.jfif"
+          alt="Mars surface"
+        />
+      </section>
+
+      <section id="facts">
+        <p class="section-card stats-text">
+          <span><strong>Radius:</strong> 3,390 km</span>
+          <span><strong>Gravity:</strong> 38% of Earth</span>
+          <span><strong>Day:</strong> 24h 37m</span>
+          <span><strong>Year:</strong> 687 Earth days</span>
+          <span><strong>Moons:</strong> 2</span>
+
+          <br />
+
+          <span><strong>Avg Temp:</strong> -65°C</span>
+          <span><strong>Atmosphere:</strong> 95% CO₂</span>
+          <span><strong>Wind:</strong> up to 100 km/h</span>
+        </p>
+        <img
+          src="images/2cyGlHRry0DvCeQxOagacWoOzobwpqankrM7KzmuNCkRn_mxM8JYhg2TAVH-AhaY4LjKlbieje7FSdyDNN62ruaZ4M9Ou6Ij1E4Me7oQSWCTy6ocRfUd3aGZMKkVgGKyfd-NlYX02Pm-IJJyIUhKqEp0dK_M7H6Sq_N1l8LE9sjMGT2_u.jfif"
+          alt="Mars mountains"
+        />
+      </section>
+
+      <section id="video">
+        <h2>Watch Mars Exploration</h2>
+
+        <div class="video-container">
+          <video controls>
+            <source src="media/Mars Exploration.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <img src="images/MIT-MissMars-01-press.jpg" alt="Planet surface" />
+        <img
+          src="images/perseverance_rover_on_mars.webp"
+          alt="Rover on Mars 1"
+        />
+        <img src="images/images.jpeg" alt="Rover on Mars 2" />
+        <img
+          src="images/mars-rover-sulfur-hero-940x529.jpg"
+          alt="Rover on Mars 3"
+        />
+        <img
+          src="images/daniele-colucci-OtXJhYjbKeg-unsplash.jpg"
+          alt="Mars landscape"
+        />
+      </section>
+
+      <section id="newsletter">
+        <div class="newsletter-box">
+          <h2>Join the Mars Newsletter</h2>
+          <p>Get updates about Mars missions and discoveries.</p>
+
+          <form>
+            <input type="email" placeholder="Enter your email..." required />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <p>Developed by Mars' greatest cheerleaders</p>
+      <p>Developed by Mars' greatest cheerleaders</p>
     </footer>
-</body>
-
+  </body>
 </html>
