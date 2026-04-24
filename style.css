@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,8 @@
   --primary-color: #de6725;
 }
 
+/* BODY */
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,8 @@ body {
   background-image: url("images/space-bg.jpg");
   background-size: cover;
 }
+
+/* HEADER */
 
 header {
   display: flex;
@@ -48,12 +54,16 @@ a {
   color: whitesmoke;
 }
 
+/* MAIN */
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 350px;
 }
+
+/* INFO SECTION */
 
 #info {
   display: flex;
@@ -79,6 +89,8 @@ main {
   width: 50%;
 }
 
+/* HISTORY SECTION */
+
 #history {
   flex-direction: row-reverse;
   display: flex;
@@ -96,15 +108,17 @@ main {
   font-size: large;
 }
 
-#history img {
-  width: 50%;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 90, 44, 0.2);
-}
-
 #history strong {
   color: var(--primary-color);
 }
+
+#history img {
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 90, 44, 0.2);
+}
+
+/* FACTS SECTION */
 
 #facts {
   display: flex;
@@ -120,6 +134,12 @@ main {
   padding: 20px;
   border-radius: 20px;
   font-size: large;
+}
+
+#facts img {
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 90, 44, 0.25);
 }
 
 .stats-text {
@@ -140,31 +160,7 @@ main {
   min-width: 140px;
 }
 
-#facts img {
-  width: 50%;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(255, 90, 44, 0.25);
-}
-
-#gallery {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-  scroll-margin-top: 25svh;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-color: var(--primary-color) var(--overlay);
-  background-color: var(--overlay);
-  width: 60%;
-  border-radius: 20px;
-  padding: 30px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* VIDEO SECTION */
 
 #video {
   flex-direction: column;
@@ -186,9 +182,33 @@ img {
   border-radius: 20px;
 }
 
+/* GALLERY */
+
+#gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  scroll-margin-top: 25svh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: var(--primary-color) var(--overlay);
+  background-color: var(--overlay);
+  width: 60%;
+  border-radius: 20px;
+  padding: 30px;
+}
+
 #gallery img {
   max-height: 300px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NEWSLETTER */
 
 #newsletter {
   justify-content: center;
@@ -235,6 +255,8 @@ img {
 .newsletter-box button:hover {
   opacity: 0.85;
 }
+
+/* FOOTER */
 
 footer p {
   padding: 20px;
